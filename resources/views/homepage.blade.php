@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="asset/homepage/hp.css">
+    {{-- <link rel="stylesheet" href="{{assets/homepage/hp.css}}"> --}}
+    <link rel="stylesheet" href="{{asset('assets/homepage/hp.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
     <style>
         body, html{
             font-family: 'Poppins', sans-serif;
@@ -79,7 +80,7 @@
         <div class="container">
           <a class="navbar-brand" href="/" style="font-size:15px;color:black">
             <div class="d-flex justify-content-between">
-              <img src="asset/image/logo1.png" alt="Logo" width="64" height="60" class="">
+              <img src="{{asset('assets/image/logo1.png')}}" alt="Logo" width="64" height="60" class="">
               <span class="ms-2 mt-2">RUMAH SAKIT UMUM DR MAULANA AK.<br>BATURAJA</span>
             </div>
           </a>
@@ -105,14 +106,14 @@
       <section id="beranda">
         <div class="welcoming">
             <div class="welkiri">
-                <img src="asset/image/logo1.png" width="170" height="166">
+                <img src="{{asset('assets/image/logo1.png')}}" width="170" height="166">
                 <h2>Pendaftaran Online Pasien</h2>
                 <p>Silahkan Log in atau Register untuk melakukan pendaftaran</p>
                 <button type="button" class="login">Login</button>
                 <button type="button" class="register">Register</button>
             </div>
             <div class="welkanan">
-                <img src="asset/image/icon.png" width="400" height="400">
+                <img src="{{asset('assets/image/icon.png')}}" width="400" height="400">
             </div>   
         </div>
         
@@ -148,35 +149,35 @@
         <h2 class="d-flex justify-content-center mt-5 mb-5">Fasilitas dan Layanan</h2>
         <div class="gridlayanan">    
         <div class="layanan" style="width: 18rem;">
-          <img src="asset/image/kamar.png" class="imgkamar" alt="..." width="80%">
+          <img src="{{asset('assets/image/kamar.png')}}" class="imgkamar" alt="..." width="80%">
           <div class="card-body">
             <h5 class="card-title">Rawat Inap</h5>
             <p class="card-text">Kami berupaya memberikan yang terbaik dalam pengobatan dan perawatan dengan suasana senyaman mungkin, didukung tenaga-tenaga yang professional pada bidangnya. Prinsip kami adalah memberikan pelayanan prima untuk semua pelanggan.</p>
           </div>
         </div>
         <div class="layanan" style="width: 18rem;">
-          <img src="asset/image/mcu.png" class="imgkamar" alt="..." width="80%">
+          <img src="{{asset('assets/image/mcu.png')}}" class="imgkamar" alt="..." width="80%">
           <div class="card-body">
             <h5 class="card-title">Medical Check Up</h5>
             <p class="card-text">Kami menawarkan berbagai paket Medical Check Up yang sesuai dengan kebutuhan kesehatan Anda. Dengan teknologi modern dan tenaga profesional yang sudah berpengalaman di bidangnya, layanan Medical Check Up Ciputra Hospital siap memberikan yang terbaik untuk kesehatan Anda.</p>
           </div>
         </div>
         <div class="layanan" style="width: 18rem;">
-          <img src="asset/image/labo.png" class="imgkamar" alt="..." width="80%">
+          <img src="{{asset('assets/image/labo.png')}}" class="imgkamar" alt="..." width="80%">
           <div class="card-body">
             <h5 class="card-title">Laboratorium</h5>
             <p class="card-text">Fasilitas laboratorium ini dilengkapi dengan peralatan yang canggih dan modern seperti alat-alat uji kimia darah, urin, dan cairan tubuh lainnya, alat-alat uji mikrobiologi, serta peralatan lain yang diperlukan untuk melakukan analisis medis.</p>
           </div>
         </div>
         <div class="layanan" style="width: 18rem;">
-          <img src="asset/image/rekammedik.png" class="imgkamar" alt="..." width="80%">
+          <img src="{{asset('assets/image/rekammedik.png')}}" class="imgkamar" alt="..." width="80%">
           <div class="card-body">
             <h5 class="card-title">Rekam Medik</h5>
             <p class="card-text">Dokumen medis ini dikelola oleh staf rekam medik yang berpengalaman dan berdedikasi. Rekam medik ini berisi informasi tentang riwayat kesehatan pasien, hasil pemeriksaan medis, hasil analisis laboratorium, catatan perawatan, dan informasi lain yang diperlukan dalam proses perawatan pasien.</p>
           </div>
         </div>
         <div class="layanan" style="width: 18rem;">
-          <img src="asset/image/poli.png" class="imgkamar" alt="..." width="80%">
+          <img src="{{asset('assets/image/poli.png')}}" class="imgkamar" alt="..." width="80%">
           <div class="card-body">
             <h5 class="card-title">Poli</h5>
             <p class="card-text">Tempat pelayanan yang bertugas melakukan pemeriksaan pasien secara umum dengan melihat indikasi atau gejala - gejala yang di derita oleh pasien</p>
@@ -226,7 +227,7 @@
               </div>
           </footer>
       </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   </body>
 </html>
