@@ -66,7 +66,7 @@ function showError($error)
                 </form>
             </div>
             <div class="signup-image">
-                <figure><img src="{{asset('assets/login/images/signup-image.jpg')}}" alt="sing up image"></figure>
+                <figure><img src="{{asset('assets/login/images/register.png')}}" alt="sing up image"></figure>
                 <span>Sudah memiliki akun? <a href="login" class="signup-image-link">Log in</a></span>
             </div>
         </div>

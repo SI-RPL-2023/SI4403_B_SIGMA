@@ -1,6 +1,7 @@
 @extends('../layout')
 @section('content')
 <!-- ALERT -->
+{{-- done --}}
 <?php
 function showError($error)
 {
@@ -42,13 +43,13 @@ function showSuccess($success)
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{{asset('assets/images/slide1.png')}}" class="d-block w-100">
+      <img src="{{asset('assets/images/caro3.jpg')}}" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="{{asset('assets/images/slide2.png')}}" class="d-block w-100">
+      <img src="{{asset('assets/images/caro2.jpg')}}" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="{{asset('assets/images/slide3.png')}}" class="d-block w-100">
+      <img src="{{asset('assets/images/caro1.jpg')}}" class="d-block w-100">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -65,7 +66,7 @@ function showSuccess($success)
     <div class="container-signup">
       <div class="signin-content">
         <div class="signin-image">
-          <figure><img src="{{asset('assets/login/images/signin-image.jpg')}}" alt="sing up image"></figure>
+          <figure><img src="{{asset('assets/login/images/login.png')}}" alt="sing up image"></figure>
           <span>Apakah anda belum memiliki akun? <a href="{{route('user.register')}}" class="register">Registrasi</a></span>
         </div>
 
