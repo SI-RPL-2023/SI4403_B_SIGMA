@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('homepage');
 });
 
+Route::get('/reservasi', function () {
+    return view('cek-reservasi-pasien');
+});
+
 
 Route::get('/login', [UserController::class, 'login'])->name('user.login');
 Route::get('/register', [UserController::class, 'register'])->name('user.register');
