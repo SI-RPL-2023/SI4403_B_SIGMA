@@ -12,6 +12,7 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="{{asset('assets/login/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/homepage/hp.css')}}">
 
     <!-- Pendaftaran pasien -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
@@ -31,7 +32,7 @@
         }
 
         footer {
-            background: #285430;
+            background: #282C54;
         }
 
         footer a {
@@ -41,7 +42,7 @@
         }
 
         footer a:hover {
-            color: #5F8D4E;
+            color: #3A7377;
         }
 
         img {
@@ -54,12 +55,14 @@
         }
 
         .link-navbar:hover {
-            color: #5F8D4E;
+            color: #3A7377;
+            transition: all 0.2s ease-out;
+            transform: scale(1.05);
             /* text-decoration: underline; */
         }
 
         .socials li {
-            background: #3A7745;
+            background: #3A7377;
             border-radius: 50px;
             margin-left: 15px;
         }
@@ -94,7 +97,7 @@
 
 <body>
     <button onclick="topFunction()" id="myBtn" class="btn btn-success rounded-circle" title="Go to top"><i class="bi bi-arrow-up-short"></i></button>
-    <nav class="navbar navbar-expand-lg" style="background:#285430;">
+    <nav class="navbar navbar-expand-lg" style="background:#282C54;">
         <div class="container">
             <a class="navbar-brand" href="/" style="font-size:15px;color:#fff">
                 <div class="d-flex justify-content-between">
