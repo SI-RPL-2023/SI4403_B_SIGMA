@@ -263,9 +263,7 @@
   <label for="Alamatwali" class="form-label">Alamat Lengkap</label>
   <textarea class="form-control" id="Alamatwali" rows="3"></textarea>
   </div>
-  
 </form>
-
 </div>
     </div>
 
