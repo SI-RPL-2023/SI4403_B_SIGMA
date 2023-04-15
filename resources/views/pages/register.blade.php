@@ -1,7 +1,6 @@
 @extends('../layout')
 @section('content')
 <!-- ALERT -->
-
 <?php 
 function showError($error)
 {   

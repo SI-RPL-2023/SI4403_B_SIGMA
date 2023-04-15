@@ -61,7 +61,6 @@ function showSuccess($success)
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
 <div class="main">
   <section class="sign-in">
     <div class="container-signup">
