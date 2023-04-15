@@ -267,7 +267,6 @@
 </div>
     </div>
 
-
     <div align="center">
     <div class="card"  style="width: 64rem;" align="left">
     <div class="card-body" > 
