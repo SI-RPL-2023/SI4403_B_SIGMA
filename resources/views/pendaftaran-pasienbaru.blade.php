@@ -246,7 +246,7 @@
     <input type="text" class="form-control" id="Hubungankeluarga" placeholder="Hubungan Keluarga">
   </div>
   
-  <h3>Alamat Wali</h3>
+  <h3>Alamat Tinggal Wali</h3>
   <div class="form-group">
     <label for="Provinsiwali">Provinsi</label>
     <input type="text" class="form-control" id="Provinsiwali" placeholder="Provinsi">
