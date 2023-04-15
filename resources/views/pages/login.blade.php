@@ -62,7 +62,6 @@ function showSuccess($success)
   </button>
 </div>
 
-
 <div class="main">
   <section class="sign-in">
     <div class="container-signup">
