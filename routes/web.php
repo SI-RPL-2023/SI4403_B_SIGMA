@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PendaftaranPasienController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,14 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// route::get('/', fn () => view ('home'));
 Route::get('/', function () {
     return view('homepage');
 });
 
+
 Route::get('/reservasi', function () {
     return view('cek-reservasi-pasien');
 });
-
+Route::get('/pendaftaran-pasien', [PendaftaranPasienController::class, 'pendaftaranpasien']);
 
 Route::get('/login', [UserController::class, 'login'])->name('user.login');
 Route::get('/register', [UserController::class, 'register'])->name('user.register');

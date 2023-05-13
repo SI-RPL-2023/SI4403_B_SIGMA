@@ -79,7 +79,7 @@ class UserController extends Controller
     {
         $param = $request->all();
         $user = Auth::user();
-
+    
         $this->validate($request, [
             'nama'  => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
