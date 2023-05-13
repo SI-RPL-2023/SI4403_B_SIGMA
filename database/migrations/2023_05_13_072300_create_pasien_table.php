@@ -16,30 +16,29 @@ class CreatePasienTable extends Migration
         Schema::create('pasien', function (Blueprint $table) {
             $table->string('no_rekam_medis')->primary();
             $table->string('nik')->unique();
-            $table->string('nama');
-            $table->enum('jk', ['L', 'P']);
+            $table->string('nama_lengkap');
+            $table->string('jenis_kelamin');
             $table->string('tempat_lahir');
-            $table->date('tgl_lahir');
+            $table->date('tanggal_lahir');
             $table->string('pekerjaan');
-            $table->char('gol_darah', 2);
+            $table->char('golongan_darah');
             $table->string('no_telp');
             $table->string('email');
-            $table->integer('id_provinsi');
-            $table->integer('id_kabupaten');
-            $table->integer('id_kecamatan');
+            $table->string('provinsi');
+            $table->string('kabupaten');
+            $table->string('kecamatan');
             $table->text('alamat');
             $table->text('foto_ktp')->nullable();
-            $table->enum('metode_bayar', ['bpjs', 'umum']);
             // Wali
-            $table->string('nama_wali')->nullable();
-            $table->enum('jk_wali', ['L', 'P'])->nullable();
+            $table->string('nama_lengkap_wali')->nullable();
+            $table->string('jenis_kelamin_wali')->nullable();
             $table->string('pekerjaan_wali')->nullable();
-            $table->string('hubungan')->nullable();
+            $table->string('hubungan_keluarga')->nullable();
             $table->string('no_telp_wali')->nullable();
             $table->string('email_wali')->nullable();
-            $table->integer('id_provinsi_wali')->nullable();
-            $table->integer('id_kabupaten_wali')->nullable();
-            $table->integer('id_kecamatan_wali')->nullable();
+            $table->string('provinsi_wali')->nullable();
+            $table->string('kabupaten_wali')->nullable();
+            $table->string('kecamatan_wali')->nullable();
             $table->text('alamat_wali')->nullable();
             // id user
             $table->unsignedBigInteger('id_user');

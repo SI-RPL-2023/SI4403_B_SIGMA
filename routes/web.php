@@ -19,10 +19,6 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-Route::get('/reservasi', function () {
-    return view('cek-reservasi-pasien');
-});
-
 Route::get("/reservasi-pasien-baru", [ReservasiController::class, 'pasienBaru']);
 Route::post("/reservasi-pasien-baru", [ReservasiController::class, 'storePasienBaru']);
 

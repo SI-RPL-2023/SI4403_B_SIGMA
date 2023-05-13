@@ -208,8 +208,8 @@
                         <input type="text" class="form-control" id="kecamatan" placeholder="Kecamatan" name="kecamatan">
                     </div>
                     <div class="form-group mb-3">
-                        <label for="alamat_lengkap" class="form-label">Alamat Lengkap</label>
-                        <textarea class="form-control" id="alamat_lengkap" rows="3" name="alamat_lengkap"></textarea>
+                        <label for="alamat" class="form-label">Alamat Lengkap</label>
+                        <textarea class="form-control" id="alamat" rows="3" name="alamat"></textarea>
                     </div>
                 </div>
             </div>
@@ -258,8 +258,8 @@
                         <input type="text" class="form-control" id="kecamatan_wali" placeholder="Kecamatan" name="kecamatan_wali">
                     </div>
                     <div class="form-group mb-3">
-                        <label for="alamat_lengkap_wali" class="form-label">Alamat Lengkap</label>
-                        <textarea class="form-control" id="alamat_lengkap_wali" rows="3" name="alamat_lengkap_wali"></textarea>
+                        <label for="alamat_wali" class="form-label">Alamat Lengkap</label>
+                        <textarea class="form-control" id="alamat_wali" rows="3" name="alamat_wali"></textarea>
                     </div>
                 </div>
             </div>
@@ -268,8 +268,8 @@
             <div class="card mb-4" style="width: 64rem;" align="left">
                 <div class="card-body">
                     <div class="mb-3">
-                        <label for="ktp" class="form-label"><h3>Unggah Berkas Pasien (KTP)</h3></label>
-                        <input class="form-control mt-2" type="file" id="ktp" name="ktp">
+                        <label for="foto_ktp" class="form-label"><h3>Unggah Berkas Pasien (KTP)</h3></label>
+                        <input class="form-control mt-2" type="file" id="foto_ktp" name="foto_ktp" accept="image/*">
                     </div>
                 </div>
             </div>
@@ -295,13 +295,14 @@
                     <div class="col-lg-4 col-md-6">
                         <h5 class="text-white mb-3">Lainnya</h5>
                         <ul class="list-unstyled text-muted">
-                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">Sitemap</a></li>
                             <li><a href="#">Kebijakan Privasi</a></li>
                             <li><a href="#">Disclaimer</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div style="width: 100%"><iframe width="100%" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=telkom%20university+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">areamaps</a></iframe></div>
+                        <!-- <img src="{{asset('assets/images/maps.png')}}" alt=""> -->
+                        <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=telkom%20university+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
                     </div>
                 </div>
                 <div class="social-login">
