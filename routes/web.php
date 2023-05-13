@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ReservasiController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +23,8 @@ Route::get('/reservasi', function () {
     return view('cek-reservasi-pasien');
 });
 
+Route::get("/reservasi-pasien-baru", [ReservasiController::class, 'pasienBaru']);
+Route::post("/reservasi-pasien-baru", [ReservasiController::class, 'storePasienBaru']);
 
 Route::get('/login', [UserController::class, 'login'])->name('user.login');
 Route::get('/register', [UserController::class, 'register'])->name('user.register');
