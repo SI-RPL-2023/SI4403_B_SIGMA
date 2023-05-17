@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Pasien;
 use Illuminate\Http\Request;
 
-class ReservasiController extends Controller
+class PendaftaranController extends Controller
 {
     public function pasienBaru() {
         return view("pendaftaran-pasien-baru");
