@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PendaftaranController;
+use App\Http\Controllers\ReservasiController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,9 @@ Route::get('/', function () {
 
 Route::get("/pendaftaran-pasien-baru", [PendaftaranController::class, 'pasienBaru']);
 Route::post("/pendaftaran-pasien-baru", [PendaftaranController::class, 'storePasienBaru']);
+
+Route::get("/cek-reservasi", [ReservasiController::class, "index"]);
+Route::post("/cek-reservasi", [ReservasiController::class, "cekReservasi"]);
 
 Route::get('/login', [UserController::class, 'login'])->name('user.login');
 Route::get('/register', [UserController::class, 'register'])->name('user.register');
