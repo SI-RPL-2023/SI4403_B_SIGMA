@@ -25,7 +25,7 @@ Route::get('/', function () {
 Route::get('/reservasi', function () {
     return view('cek-reservasi-pasien');
 });
-Route::get('/pendaftaran-pasien', [PendaftaranPasienController::class, 'pendaftaranpasien']);
+Route::get('/pendaftaran-pasien', [PendaftaranPasienController::class, 'index'])->name('pasien.index');
 
 Route::get('/login', [UserController::class, 'login'])->name('user.login');
 Route::get('/register', [UserController::class, 'register'])->name('user.register');
