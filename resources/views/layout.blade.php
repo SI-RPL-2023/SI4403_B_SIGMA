@@ -128,13 +128,13 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link link-navbar">Master Poli</a>
+                        <a href="/master-poli" class="nav-link link-navbar">Master Poli</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link link-navbar">Master Dokter</a>
+                        <a href="/master-dokter" class="nav-link link-navbar">Master Dokter</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link link-navbar">Master Jadwal</a>
+                        <a href="/master-jadwal" class="nav-link link-navbar">Master Jadwal</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{url('cek-reservasi-pasien')}}" class="nav-link link-navbar">Cek Reservasi</a>

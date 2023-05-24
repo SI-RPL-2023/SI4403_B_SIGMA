@@ -71,7 +71,7 @@ class UserController extends Controller
                 }
             }
         } else {
-            return redirect()->to('login')->with('error', 'Email atau Password salah!');
+            return Redirect::to('login');
         }
     }
 
