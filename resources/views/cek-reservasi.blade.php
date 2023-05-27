@@ -51,7 +51,7 @@ function showSuccess($success)
               </div>
 
               <div class="signin-form mt-5">
-                  <form method="GET" action="{{url('cek-reservasi')}}" class="register-form" id="login-form">
+                  <form method="POST" action="/cek-reservasi" class="register-form" id="login-form">
                     <h2 class="mb-4">Cek Reservasi</h2>
                     @csrf
                       <div class="form-group">

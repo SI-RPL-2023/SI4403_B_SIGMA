@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PendaftaranController;
+use App\Http\Controllers\ReservasiController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PendaftaranPasienController;
 
@@ -31,6 +32,9 @@ Route::get('/poliklinik', [PendaftaranPasienController::class, 'poliklinik']);
 
 Route::get("/pendaftaran-pasien-baru", [PendaftaranController::class, 'pasienBaru']);
 Route::post("/pendaftaran-pasien-baru", [PendaftaranController::class, 'storePasienBaru']);
+
+Route::get("/cek-reservasi", [ReservasiController::class, "index"]);
+Route::post("/cek-reservasi", [ReservasiController::class, "cekReservasi"]);
 
 Route::get('/login', [UserController::class, 'login'])->name('user.login');
 Route::get('/register', [UserController::class, 'register'])->name('user.register');
