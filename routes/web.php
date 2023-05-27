@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PendaftaranPasienController;
 
@@ -22,12 +23,14 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-
 Route::get('/reservasi', function () {
     return view('cek-reservasi-pasien');
 });
 Route::get('/pendaftaran-pasien', [PendaftaranPasienController::class, 'index'])->name('pasien.index');
 Route::get('/poliklinik', [PendaftaranPasienController::class, 'poliklinik']);
+
+Route::get("/pendaftaran-pasien-baru", [PendaftaranController::class, 'pasienBaru']);
+Route::post("/pendaftaran-pasien-baru", [PendaftaranController::class, 'storePasienBaru']);
 
 Route::get('/login', [UserController::class, 'login'])->name('user.login');
 Route::get('/register', [UserController::class, 'register'])->name('user.register');
