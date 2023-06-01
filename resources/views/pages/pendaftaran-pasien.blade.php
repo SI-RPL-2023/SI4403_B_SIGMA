@@ -295,7 +295,7 @@ function showSuccess($success)
           <input type="file" name="foto_ktp" class="form-control">
         </div>
       </div>
-      <button type="button" onclick="konfirmasiSimpan()" class="btn btn-lg btn-primary mt-4 w-100" style="background:#45A75B;border:none">Next</button>
+      <button type="button" onclick="konfirmasiSimpan()" class="btn btn-lg btn-primary mt-4 w-100" style="background:#3A7377;border:none">Next</button>
       </form>
     </div>
   </div>

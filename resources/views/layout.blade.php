@@ -73,9 +73,9 @@
 
         .nav-tabs .nav-item.show .nav-link,
         .nav-tabs .nav-link.active {
-            border-bottom: 3px solid #0D9737;
+            border-bottom: 3px solid #3A7377;
             background: #F9F9F9;
-            color: #285430;
+            color: #282C54;
         }
 
         #myBtn {
