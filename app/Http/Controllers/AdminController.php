@@ -318,9 +318,10 @@ class AdminController extends Controller
 
     public function master_obat_update(Request $request, $id)
     {
+        // dd($request->all());
         $param = $request->all();
         $this->validate($request, [
-            'kode_reservasi' => ['required', 'string', 'unique:reservasi'],
+            'kode_reservasi' => ['required', 'string'],
             'no_rekam_medis' => ['required', 'string'],
             'obat' => ['required', 'string']
         ]);

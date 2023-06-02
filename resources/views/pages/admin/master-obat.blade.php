@@ -63,7 +63,7 @@ function showSuccess($success)
             @csrf
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="kode_reservasi" class="control-label">Kode Reservasi</label>
+                    <label for="kode_reservasi" class="control-label"></label>
                     <select name="kode_reservasi" id="kode_reservasi" class="form-select">
                       <option value="">- Pilih Kode Reservasi -</option>
                       @foreach($pasien as $row)
@@ -76,23 +76,23 @@ function showSuccess($success)
                     </select>
                 </div>
                 <div class="form-group">
-                  <label for="no_rekam_medis" class="control-label">No.Rekam Medis</label>
+                  <label for="no_rekam_medis" class="control-label"></label>
                   <input type="text" name="no_rekam_medis" id="no_rekam_medis" class="form-control" readonly>
                 </div>
                 <div class="form-group">
-                  <label for="nama_pasien" class="control-label">Nama Pasien</label>
+                  <label for="nama_pasien" class="control-label"></label>
                   <input type="text" id="nama_pasien" class="form-control" readonly>
                 </div>
                 <div class="form-group">
-                  <label for="no_telp" class="control-label">No.Telp</label>
+                  <label for="no_telp" class="control-label"></label>
                   <input type="text" id="no_telp" class="form-control" readonly>
                 </div>
                 <div class="form-group">
-                  <label for="alamat" class="control-label">Alamat</label>
+                  <label for="alamat" class="control-label"></label>
                   <input type="text" id="alamat" class="form-control" readonly>
                 </div>
                 <div class="form-group">
-                  <label for="obat" class="control-label">Resep Dokter/Obat</label>
+                  <label for="obat" class="control-label"></label>
                   <textarea name="obat" id="obat"></textarea>
                 </div>    
             </div>
@@ -193,23 +193,23 @@ function showSuccess($success)
                               </select>
                           </div>
                           <div class="form-group">
-                            <label for="no_rekam_medis" class="control-label">No.Rekam Medis</label>
+                            <label for="no_rekam_medis" class="control-label"></label>
                             <input type="text" name="no_rekam_medis" id="no_rekam_medis_edit" class="form-control" readonly>
                           </div>
                           <div class="form-group">
-                            <label for="nama_pasien" class="control-label">Nama Pasien</label>
+                            <label for="nama_pasien" class="control-label"></label>
                             <input type="text" id="nama_pasien_edit" class="form-control" readonly>
                           </div>
                           <div class="form-group">
-                            <label for="no_telp" class="control-label">No.Telp</label>
+                            <label for="no_telp" class="control-label"></label>
                             <input type="text" id="no_telp_edit" class="form-control" readonly>
                           </div>
                           <div class="form-group">
-                            <label for="alamat" class="control-label">Alamat</label>
+                            <label for="alamat" class="control-label"></label>
                             <input type="text" id="alamat_edit" class="form-control" readonly>
                           </div>
                           <div class="form-group">
-                            <label for="obat" class="control-label">Resep Dokter/Obat</label>
+                            <label for="obat" class="control-label"></label>
                             <textarea name="obat" id="obat_edit" class="obat_edit"></textarea>
                           </div>  
                           </div>
@@ -227,10 +227,12 @@ function showSuccess($success)
 @section('js')
 <script>
   $(document).ready(function(){
-    $('#obat').summernote();
-    $('#obat_edit').summernote();
+    // $('#obat').summernote();
+    // $('#obat_edit').summernote();
 
     $('#kode_reservasi').on('change', function(){
+      var selectedText = $(this).find("option:selected").text();
+      console.log(selectedText);
       var no_rekam_medis = $(this).find(':selected').attr('data-no_rekam_medis');
       var nama = $(this).find(':selected').attr('data-nama');
       var no_telp = $(this).find(':selected').attr('data-no_telp');
@@ -244,6 +246,7 @@ function showSuccess($success)
     // EDIT ON MODAL
   function edit_obat(el) {
        var link = $(el) //refer `a` tag which is clicked
+       console.log(link);
         var modal = $("#edit_obat") //your modal
         var kode_reservasi = link.data('kode_reservasi');
         var no_rekam_medis = link.data('no_rekam_medis_edit');
@@ -260,11 +263,11 @@ function showSuccess($success)
 
         modal.find('#id_edit').val(id);
         $("#kode_reservasi_edit option[value='"+kode_reservasi+"']").attr("selected","selected");
-        modal.find('#nama_pasien_edit').val(no_rekam_medis);
-        modal.find('#no_rekam_medis_edit').val(nama);
+        modal.find('#nama_pasien_edit').val(nama);
+        modal.find('#no_rekam_medis_edit').val(no_rekam_medis);
         modal.find('#no_telp_edit').val(no_telp);
         modal.find('#alamat_edit').val(alamat);
-        $('#obat_edit').summernote("code", obat);
+        // $('#obat_edit').summernote("code", obat);
       }
       // END EDIT
 </script>

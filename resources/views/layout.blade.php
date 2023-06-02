@@ -120,6 +120,9 @@
                         <a href="{{url('poliklinik')}}" class="nav-link link-navbar">Jadwal Dokter</a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{url('form-obat')}}" class="nav-link link-navbar">Pengambilan Obat</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="{{url('reservasi')}}" class="nav-link link-navbar">Cek Reservasi</a>
                     </li>
                 </ul>
@@ -135,6 +138,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="/master-jadwal" class="nav-link link-navbar">Master Jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{url('master-obat')}}" class="nav-link link-navbar">Master Obat</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{url('cek-reservasi-pasien')}}" class="nav-link link-navbar">Cek Reservasi</a>
